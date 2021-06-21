@@ -1,0 +1,95 @@
+#title {
+    font-size: 30pt;
+    text-align: center;
+    padding: 30px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner button {
+    height: 30px;
+    margin: 30px;
+}
+
+#advantages {
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#wave-1 {
+    width: 100%;
+    display: block;
+}
+
+#wave-2 {
+    width: 100%;
+    display: block;
+}
+
+.content1 {
+    background-color: #f6f6f6;
+}
+
+.content1, .content2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 200px;
+    align-items: center;
+}
+
+.content2-text {
+    margin-left: 50px;
+}
+
+.content1-text h1, .content2-text h1 {
+    font-size: 26pt;
+}
+
+.content1-details, .content2-details {
+    margin-top: 10px;
+    width: 500px;
+}
+
+.content1-details p, .content2-details p {
+    text-align: justify;
+}
+
+.content1 img, .content2 img {
+    width: 400px;
+}
+
+#padding {
+    padding-bottom: 75px;
+}
+
+@media (max-width: 800px) {
+    .banner button {
+        margin: 15px;
+    }
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .content1-text h1, .content2-text h1 {
+        text-align: center;
+    }
+
+    .content1 img, .content2 img {
+        margin-top: 50px;
+    }
+
+    .content2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px 0;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zunder Ziffli - Register</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="./register.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="head-1">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    Menu
+                </div>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="companyprofile.html">Company Profile</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+            <a href="home.html">
+                <img src="assets/Logo.png" alt="">
+            </a>
+            <a id="registerbtn" href="register.html">Register</a>
+        </div>
+        <div class="head-2"></div>
+        <div class="head-3">
+            <p>REGISTER</p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="title">
+                Register Account
+            </div>
+            <div class="form">
+                <div class="inputfield">
+                    <label for="nameTxt">Name</label>
+                    <input type="text" class="input" name="nameTxt" id="nameTxt">
+                </div>
+                <div class="inputfield">
+                    <label for="emailTxt">Email</label>
+                    <input type="email" class="input" name="emailTxt" id="emailTxt">
+                </div>
+                <div class="inputfield">
+                    <label>Gender</label>
+                    <div class="genderselect">
+                        <select name="genderTxt" id="genderTxt">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label>Address</label>
+                    <textarea class="textarea" name="addressTxt" id="addressTxt"></textarea>
+                </div> 
+                <div class="inputfield">
+                    <label for="cityTxt">City</label>
+                    <input type="text" class="input" name="cityTxt" id="cityTxt">
+                </div>
+                <div id="terms" class="inputfield">
+                    <label class="check">
+                      <input type="checkbox" name="checked" id="checked">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <div id="errorMessage">
+
+                </div>
+                <div class="inputfield">
+                    <button class="btn" onclick="validate()">Register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="facebook">
+                <a href="https:/facebook.com">
+                    <img src="assets/Facebook.svg" alt="">
+                </a>
+                <a href="https:/facebook.com">Facebook</a>
+            </div>
+            <div class="instagram">
+                <a href="https:/facebook.com">
+                    <img src="assets/Instagram.svg" alt="">
+                </a>
+                <a href="https:/instagram.com">Instagram</a>
+            </div>
+        </div>
+        <p id="copy">Copyright &copy; 2021 Zunder Zifflin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

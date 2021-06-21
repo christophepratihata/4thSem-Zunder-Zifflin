@@ -1,0 +1,110 @@
+.container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #f6f6f6;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 2px #4B8BC4;
+    box-shadow: 10px 15px #4B8BC4;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.form {
+    width: 100%;
+}
+
+.inputfield {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inputfield label {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.inputfield .input, .inputfield .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.inputfield .textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.inputfield .genderselect {
+    width: 100%;
+    height: 36.4px;
+}
+
+.inputfield .genderselect select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+
+.inputfield .check {
+    width: 15px;
+    height: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.inputfield .input:focus, .inputfield .textarea:focus, .inputfield .genderselect select:focus {
+    border: 1px solid #FFBD01;
+    transition: 0.2s ease;
+}
+
+.inputfield .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background-color:#FFBD01;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputfield .btn:hover {
+    background-color:rgb(255, 174, 0);
+}
+
+#errorMessage {
+    color: red;
+}
+
+@media (max-width: 800px) {
+    .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inputfield label {
+        margin-bottom: 5px;
+    }
+
+    #terms {
+        flex-direction: row;
+    }
+}

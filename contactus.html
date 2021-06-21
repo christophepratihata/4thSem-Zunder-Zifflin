@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zunder Zifflin - Contact Us</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./contactus.css">
+    <link rel="stylesheet" href="./footer.css">
+    <script src="contactus.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="head-1">
+            <div class="dropdown">
+                <div class="dropbtn">
+                    Menu
+                </div>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="companyprofile.html">Company Profile</a>
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+            <a href="home.html">
+                <img src="assets/Logo.png" alt="">
+            </a>
+            <a id="registerbtn" href="register.html">Register</a>
+        </div>
+        <div class="head-2"></div>
+        <div class="head-3">
+            <p>CONTACT US</p>
+        </div>
+    </header>
+    <section>
+        <div class="contactus">
+            <div class="contactus-text">
+                <h1>Contact Us</h1>
+                <div class="contactus-details">
+                    <span id="contactus-details-bold">West Virginia, United States of America</span> <br>
+                    <span>250 Skidmore Ln, Sutton, WV 26601</span>
+                </div>
+            </div>
+            <img src="assets/VirginiaMap.png" alt="">
+        </div>
+        <img id="wave" src="assets/Wave-1.png" alt="">
+        <div class="message">
+            <div class="message-text">
+                <h1>Leave Us a Message</h1>
+                <div class="csemail">
+                    <img id="mailpic" src="assets/Mail.svg" alt="">
+                    <span>zunderzifflincs@gmail.com</span>
+                </div> 
+                <div class="csphone">
+                    <img id="phonepic" src="assets/Phone.svg" alt="">
+                    <span>083811336888</span>
+                </div> 
+                <div class="name">
+                    <label for="nameTxt">Name</label> <br>
+                    <input type="text" name="nameTxt" id="nameTxt">
+                </div>
+                <div class="email">
+                    <label for="emailTxt">Email</label> <br>
+                    <input type="email" name='emailTxt' id="emailTxt">
+                </div>
+                <div class="messagebox">
+                    <label for="messageTxt">Message</label> <br>
+                    <textarea name="messageTxt" id="messageTxt" cols="50" rows="5"></textarea>
+                </div>
+                <div id="errorMessage">
+
+                </div>
+                <button onclick="validate()">Submit</button>
+            </div>
+            <img id="message-pic" src="assets/MessageSent.svg" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="facebook">
+                <a href="https:/facebook.com">
+                    <img src="assets/Facebook.svg" alt="">
+                </a>
+                <a href="https:/facebook.com">Facebook</a>
+            </div>
+            <div class="instagram">
+                <a href="https:/facebook.com">
+                    <img src="assets/Instagram.svg" alt="">
+                </a>
+                <a href="https:/instagram.com">Instagram</a>
+            </div>
+        </div>
+        <p id="copy">Copyright &copy; 2021 Zunder Zifflin. All rights reserved.</p>
+    </footer>
+</body>
+</html>

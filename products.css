@@ -1,0 +1,80 @@
+.printer-title, .scanner-title {
+    padding: 35px 0px 45px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.printer-title img, .scanner-title img {
+    width: 250px;
+}
+
+.printer-content, .scanner-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.printer, .scanner {
+    color: #073c4b;
+    background-color: #f1f1f1;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    border: solid 2px #99D8DD;
+    height: 380px;
+    width: 200px;
+}
+
+.printer:hover, .scanner:hover {
+    box-shadow: 0px 3px 6px grey;
+    transition: ease 0.2s;
+}
+
+.printer img, .scanner img {
+    background-color: white;
+    width: 200px;
+    border-radius: 15px;
+    border: solid 2px #99D8DD;
+}
+
+#title {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16pt;
+    border: solid 2px #99D8DD;
+    border-radius: 10px;
+    background-color: #dddddd;
+}
+
+#desc {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#desc2 {
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+@media (max-width: 800px) {
+    .printer-content, .scanner-content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .scanner-title {
+        margin-top: 45px;
+    }
+
+    .printer-title, .scanner-title {
+        padding: 35px 0px 0px 0px;
+    }
+
+    .printer, .scanner {
+        margin-top: 45px;
+    }
+
+    footer {
+        margin-top: 45px;
+    }
+}
